@@ -8,6 +8,7 @@ import Breadcrumbs from './Breadcrumbs';
 import Skills from './Skills'; 
 import './style.css'; 
 
+
 const Resume = () => { 
 	const breadcrumbsPaths = 
 		[ 
@@ -31,7 +32,7 @@ const Resume = () => {
 						Download my resume to learn more 
 						about my professional experience and skills. 
 					</p> 
-					<a href="path/to/your/resume.pdf"
+					<a href="src/Images/ndakalaCV Resume.pdf"
 						className="resume-download-btn" download> 
 						Download Resume 
 					</a> 

@@ -10,25 +10,25 @@ return (
 	<div className="container"> 
 		<div className="row"> 
 		<div className="col-md-6"> 
-			<p>© 2023 Geek. All rights reserved.</p> 
+			<p>© 2024. All rights reserved.</p> 
 		</div> 
 		<div className="col-md-6 text-md-right"> 
 			<ul className="social-icons list-unstyled"> 
 			<li> 
 				<a 
-href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer"> 
+href="https://linkedin.com/in/juliusndakala" target="_blank" rel="noopener noreferrer"> 
 				<FontAwesomeIcon icon={faLinkedin} /> 
 				</a> 
 			</li> 
 			<li> 
 				<a href= 
-"https://github.com/yourusername" target="_blank" rel="noopener noreferrer"> 
+"https://github.com/ndakalajulius" target="_blank" rel="noopener noreferrer"> 
 				<FontAwesomeIcon icon={faGithub} /> 
 				</a> 
 			</li> 
 			<li> 
 				<a href= 
-"https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer"> 
+"https://twitter.com/juliusndakala" target="_blank" rel="noopener noreferrer"> 
 				<FontAwesomeIcon icon={faTwitter} /> 
 				</a> 
 			</li> 

@@ -1,31 +1,9 @@
-//Header.js 
-import React from 'react'; 
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-import { Navbar, Nav } from 'react-bootstrap'; 
-import { FontAwesomeIcon } 
-from '@fortawesome/react-fontawesome'; 
-import { faGithub, faLinkedin } 
-from '@fortawesome/free-brands-svg-icons'; 
-import { 
-faInfoCircle, faCode, 
-faFileAlt, faEnvelope 
-} 
-from '@fortawesome/free-solid-svg-icons'; 
-import { Link } from 'react-router-dom'; 
-
-import './Header.css'; 
-import './style.css'; 
-
-const Header = () => { 
-return ( 
-	<Navbar bg="dark" expand="lg"
+<Navbar bg="dark" expand="lg"
 	className="custom-navbar shadow-sm"> 
-	<div class="container-fluid"/>
 	<Navbar.Brand as={Link} to="/"
 		className="brand-name"> 
 		<span className="display-4 text-white ho"> 
-		
+		Geek 
 		</span> 
 	</Navbar.Brand> 
 	<button 
@@ -64,7 +42,7 @@ return (
 		</Nav.Link> 
 		</Nav> 
 		<Nav className="ml-auto"> 
-		<Nav.Link href="https://github.com/ndakalajulius"> 
+		<Nav.Link href="https://github.com/yourusername"> 
 			<span className="sr-only">Github</span> 
 			<FontAwesomeIcon icon={faGithub} size="lg"
 			className='text-light ho' /> 
@@ -77,7 +55,3 @@ return (
 		</Nav> 
 	</div> 
 	</Navbar> 
-); 
-}; 
-
-export default Header;
