@@ -1,53 +1,45 @@
-// Contact.js 
-import React from 'react'; 
-import { FontAwesomeIcon } 
-	from '@fortawesome/react-fontawesome'; 
-import { faEnvelope, faPhone } 
-	from '@fortawesome/free-solid-svg-icons'; 
-import { faLinkedin, faGithub } 
-	from '@fortawesome/free-brands-svg-icons'; 
-import Breadcrumbs from './Breadcrumbs'; 
-import './style.css'; 
+// Contact.js
+import React from "react";
 
-const Contact = () => { 
-	const breadcrumbsPaths = 
-		[ 
-			{ title: 'Home', to: '/' }, 
-			{ title: 'Contact', to: '/contact' } 
-		]; 
+import "./contact.css"; // Import your custom CSS file
 
-	return ( 
-		<section id="contact" className="container"> 
-			<Breadcrumbs paths={breadcrumbsPaths} /> 
-			<h2 className="section-title">Contact</h2> 
-			<p className="section-description"> 
-				Feel free to reach out for
-				collaboration or inquiries. 
-			</p> 
-			<ul className="contact-list list-unstyled"> 
-				<li> 
-					<FontAwesomeIcon icon={faEnvelope} 
-						className="contact-icon" /> 
-					juliusndakala35@gmail.com
-				</li> 
-				<li> 
-					<FontAwesomeIcon icon={faLinkedin} 
-						className="contact-icon" /> 
-					LinkedIn 
-				</li> 
-				<li> 
-					<FontAwesomeIcon icon={faGithub} 
-						className="contact-icon" /> 
-					GitHub 
-				</li> 
-				<li> 
-					<FontAwesomeIcon icon={faPhone} 
-						className="contact-icon" /> 
-					+254 700-308-204
-				</li> 
-			</ul> 
-		</section> 
-	); 
-}; 
+const Contact = () => {
+  return (
+    <div class="container">
+      <label for="fname">First Name</label>
+      <input
+        type="text"
+        id="fname"
+        name="firstname"
+        placeholder="Your name.."
+      />
+
+      <label for="lname">Last Name</label>
+      <input
+        type="text"
+        id="lname"
+        name="lastname"
+        placeholder="Your last name.."
+      />
+
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="australia">Kenya</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+
+      <label for="subject">Subject</label>
+      <textarea
+        id="subject"
+        name="subject"
+        placeholder="Write something.."
+        style={{ height: 200 }}
+      ></textarea>
+
+      <input type="submit" value="Submit" />
+    </div>
+  );
+};
 
 export default Contact;
